@@ -1,50 +1,57 @@
-# Ven Grand Hotel - Booking & Management Website 🏨
+# 🏨 Ven Grand Hotel - Web Platform
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live_Site-blue.svg)](https://ven-grand-hotel.page.gd/?i=1)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Ven_Grand_Hotel-blue?style=for-the-badge)](https://ven-grand-hotel.page.gd/?i=1)
 
-## 📌 Project Overview
-This project is a comprehensive and fully functional hotel website developed as a university assignment. The goal was to design, develop, and deploy a professional online presence for the fictional "Ven Grand Hotel," complete with an integrated booking system, multi-language support, and live customer communication features.
+Ven Grand Hotel is a comprehensive, end-to-end accommodation service platform built using WordPress. This project was developed as a final project for the Content Design course at Burdur Mehmet Akif Ersoy University to digitalize the online presence of a luxury hotel, integrate a fully functional booking engine, and manage customer interactions.
 
-## 🚀 Key Features
-* **Integrated Booking System:** End-to-end room reservation management, availability checking, and pricing structure setup using **Vikbooking**.
-* **Modern & Responsive UI:** Built with the **Astra** theme to ensure a seamless experience across desktop, tablet, and mobile devices.
-* **Live Chat Support:** Real-time customer service integration via **Tidio**.
-* **Localization:** Multi-language infrastructure configured using **Loco Translate** to cater to international guests.
-* **Performance Optimized:** Hosted and optimized for smooth navigation and fast load times.
+## 🚀 Features
 
-## 🛠️ Tech Stack & Tools
-* **CMS:** WordPress
-* **Theme:** Astra
-* **Core Plugins:** Vikbooking (Reservations), Tidio (Live Chat), Loco Translate (Localization)
-* **Local Development:** XAMPP / MAMP
-* **Hosting:** InfinityFree 
+* **Real-Time Booking Engine:** Integrated with VikBooking for room allocation, seasonal pricing, and real-time availability checks.
+* **AI-Powered Customer Support:** Tidio AI chatbot integration for 24/7 instant visitor communication.
+* **Responsive & Premium UI:** Built with Astra Theme and Elementor for a seamless, mobile-optimized experience across all devices.
+* **Performance Optimized:** Configured with LiteSpeed Cache and WebP image optimization to ensure rapid page loading times on cloud hosting.
+* **Custom Localization:** Translated complex booking backend systems into Turkish using Loco Translate for the local market.
+* **Dynamic Forms:** Secure and modern customer inquiry forms managed via SureForms.
 
-## 📸 Screenshots
+## 🛠️ Tech Stack & Infrastructure
 
-> ![Home Page](screenshots/anasayfa.png)
-> *Ven Grand Hotel - Home Page & Navigation*
+* **CMS:** WordPress (v6.9.4)
+* **Theme/Design:** Astra Theme, Elementor, Ultimate Addons
+* **Core Plugins:** VikBooking (Reservation System), Tidio (AI Chat), Loco Translate (Localization), LiteSpeed Cache (Performance)
+* **Database Management:** Advanced MySQL relations (e.g., `wp_vikbooking_rooms`, `wp_vikbooking_reservations`)
+* **Hosting:** InfinityFree (Cloud setup with PHP/MySQL)
 
-> ![Our Rooms](screenshots/odalarimiz.png)
-> *Room Types and Detailed Views*
+## 📸 Interface Screenshots
 
-> ![Booking Page](screenshots/rezervasyon-sayfasi.png)
-> *Vikbooking Integration - Live Reservation System*
+*(Note: Click on the images to view them in full resolution.)*
 
-> ![About Us](screenshots/hakkimizda.png)
-> *About the Hotel & Amenities*
+### Homepage (Ana Sayfa)
+A dynamic landing page featuring high-resolution visuals and a quick-search booking widget.
+![Ana Sayfa](screenshots/anasayfa.png)
 
-> ![Contact](screenshots/iletisim.png)
-> *Contact Information & Tidio Live Chat Integration*
+### Our Rooms (Odalarımız)
+Detailed listings of room types (Standard, Deluxe, Suite) with capacities and pricing.
+![Odalarımız](screenshots/odalarimiz.png)
 
-## ⚙️ Development Process & Local Setup
-If you want to run this project locally:
-1. Clone this repository to your local machine.
-2. Set up a local server environment (like XAMPP or MAMP).
-3. Install a fresh WordPress instance.
-4. Import the `wp-content` folder configurations and install the required theme (Astra) and plugins.
-5. *(Optional)* Import the provided SQL database dump via phpMyAdmin to restore the exact site structure and demo content.
+### Reservation System (Rezervasyon)
+Interactive booking module running on the VikBooking engine.
+![Rezervasyon](screenshots/rezervasyon-sayfasi.png)
 
-## 👤 Author
-**[İbrahim Emir Akman]**
-* LinkedIn: [www.linkedin.com/in/i-emir-akman]
-* University Project - Web Development & CMS Integration
+### About & Contact (Hakkımızda ve İletişim)
+Corporate identity pages and dynamic contact forms with mapping.
+![Hakkımızda](screenshots/hakkimizda.png)
+![İletişim](screenshots/iletisim.png)
+
+## 💡 Problem Solving & Architecture
+
+During the development phase, several architectural challenges were resolved:
+1.  **Localization Barrier:** Overcame the lack of native Turkish support in the core booking engine by manually translating PO/MO files using Loco Translate.
+2.  **Resource Constraints:** Solved server-side database connection issues on shared hosting by implementing aggressive HTML/CSS minification and WebP image compression.
+3.  **Deployment:** Successfully migrated the complex local development environment (MAMP) to a live cloud server using All-in-One WP Migration, ensuring all permalinks and database relations remained intact.
+
+## 👥 Developers
+
+* **İbrahim Emir Akman** *
+
+---
+*This repository serves as a portfolio showcase. For a detailed breakdown of the UX design process, database logic, and future commercial scaling plans (VPS migration, Stripe/İyzico integration), please review the attached [Project Presentation PDF](./vengrandhotel_sunum.pdf).*
